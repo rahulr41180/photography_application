@@ -18,4 +18,9 @@ menuBtn.addEventListener("click", (event) => {
         closeBtnNavMenu.style.display = "none";
         menuBtnIcon.style.display = "block";
     }
+});
+
+
+navLinks.addEventListener("click", (event) => {
+    navLinks.classList.remove("open");
 })
