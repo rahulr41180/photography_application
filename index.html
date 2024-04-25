@@ -12,48 +12,93 @@
 
 <body>
 
-    <header class="header" id="home">
-        <nav>
-            <div class="nav_header">
-                <div class="nav_logo">
-                    <a href="#">
-                        <p>DINESHGAHLOT.COM</p>
-                    </a>
-                </div>
-                <div class="nav_menu_btn" id="menu_btn">
-
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-list nav_menu_btn_bi-list" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-x nav_menu_btn_bi-x" viewBox="0 0 16 16">
-                        <path
-                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
-                    </svg>
-                </div>
+    <!-- <header class="header" id="home"> -->
+    <nav id="nav1">
+        <div class="nav_header">
+            <div class="nav_logo">
+                <a href="#">
+                    <p>DINESHGAHLOT.COM</p>
+                </a>
             </div>
-            <ul class="nav_links" id="nav_links">
-                <div class="nav_logo">
-                    <a href="#">
-                        <p>DINESHGAHLOT.COM</p>
-                    </a>
-                </div>
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#portfolio">PORTFOLIO</a>
-                    <!-- <select name="" id="">
+            <div class="nav_menu_btn" id="menu_btn">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-list nav_menu_btn_bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-x nav_menu_btn_bi-x" viewBox="0 0 16 16">
+                    <path
+                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                </svg>
+            </div>
+        </div>
+        <ul class="nav_links" id="nav_links">
+            <div class="nav_logo">
+                <a href="#">
+                    <p>DINESHGAHLOT.COM</p>
+                </a>
+            </div>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a>
+                <!-- <select name="" id="">
                             <option value="">PORTFOLIO</option>
 
                         </select> -->
-                </li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#testimonials">TESTIMONIALS</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-                
-            </ul>
-        </nav>
-    </header>
+            </li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#testimonials">TESTIMONIALS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+
+        </ul>
+    </nav>
+    <!-- </header> -->
+    <nav id="nav2">
+        <ul class="nav_links" id="nav_links">
+            <div class="nav_logo">
+                <a href="#">
+                    <p>DINESHGAHLOT.COM</p>
+                </a>
+            </div>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a>
+                <!-- <select name="" id="">
+                            <option value="">PORTFOLIO</option>
+
+                        </select> -->
+            </li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#testimonials">TESTIMONIALS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+
+        </ul>
+    </nav>
+    <div class="hero_slider" id="home">
+        <div class="slide_container">
+            <div class="slide active">
+                <img src="./assets/hero_slider1.jpg" alt="slide 1">
+            </div>
+            <div class="slide">
+                <img src="./assets/hero_slider2.jpg" alt="slide 2">
+
+            </div>
+            <div class="slide">
+                <img src="./assets/hero_slider2.jpg" alt="slide 3">
+            </div>
+        </div>
+        <div class="slider_navigation" id="slider_navigation">
+            <button id="prev_slide">&larr;</button>
+            <div id="current_slide"></div>
+
+            <button id="next_slide">&rarr;</button>
+        </div>
+    </div>
+
+    <div class="photo_gall_1" id="photo_gall_1">
+        
+    </div>
+
 
 
 </body>
