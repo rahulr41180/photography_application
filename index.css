@@ -611,7 +611,7 @@ p {
     width: 80%;
     background-color: var(--extra-light);
     height: 50%;
-    top: 25%;
+    top: 4%;
     right: 0;
     opacity: 0.8;
 }
@@ -642,15 +642,14 @@ p {
 .cr_form_box {
     height: 80%;
     width: 100%;
+    padding: 10px;
 }
 
 .cr_form {
     width: 100%;
     height: 100%;
-    padding: 18px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
     font-family: var(--header-font);
     font-size: var(--m-font);
 }
@@ -659,12 +658,14 @@ p {
     width: 100%;
     height: 14%;
     padding: 5px 10px;
+    margin-bottom: 8px;
 }
 
 .crf_textarea {
     width: 100%;
-    height: 30%;
+    height: 28%;
     padding: 5px 10px;
+    margin-bottom: 8px;
 }
 .cr_social_box {
     height: 20%;
@@ -1066,5 +1067,11 @@ p {
 
     .bc_left {
         width: 100%;
+    }
+
+    /* Contact CSS Start */
+
+    .clc_heading {
+        font-size: var(--m-font);
     }
 }
