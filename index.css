@@ -5,22 +5,32 @@
 
 /* CSS Variable Start */
 :root {
+    /* CSS For color */
     --text-dark: #171717;
     --text-dark-light: #423838;
     --text-light: #525252;
     --extra-light: #a3a3a3;
     --white: #ffffff;
 
+    /* CSS For width and height */
     --max-width: 1240px;
+
+    /* CSS For font family */
     --header-font: "Merriweather", serif;
+
+    /* CSS For font size */
+    --lg-font : 18px;
+    --m-font : 16px;
+    --sm-font : 14px;
+    --s-font  : 12px;
 }
 
 /* CSS Variable End */
 
 /* Global CSS */
+
 * {
     padding: 0;
-
     margin: 0;
     box-sizing: border-box;
 }
@@ -50,7 +60,6 @@ p {
     position: relative;
     isolation: isolate;
     padding: 1rem .5rem;
-
     top: 0;
     max-width: var(--max-width);
     width: 80%;
@@ -97,7 +106,7 @@ p {
     padding-bottom: 0;
     font-weight: 500;
     border-bottom: 2px solid transparent;
-    font-size: 12px;
+    font-size: var(--s-font);
 }
 
 .nav_links a:hover {
@@ -105,7 +114,7 @@ p {
 }
 
 .nav_links .nav_logo p {
-    font-size: 12px;
+    font-size: var(--s-font);
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -120,7 +129,6 @@ p {
     justify-content: space-between;
     transition: 0.5s;
     margin: auto;
-
     width: 79%;
     left: 50%;
     transform: translateX(-50%);
@@ -163,7 +171,7 @@ p {
 .hero_slider1_heading {
     font-family: var(--header-font);
     color: var(--white);
-    font-size: 18px;
+    font-size: var(--lg-font);
     display: inline;
     position: absolute;
     width: 190px;
@@ -180,7 +188,7 @@ p {
     color: var(--extra-light);
     border: 0;
     padding: 1px 7px;
-    font-size: 18px;
+    font-size: var(--lg-font);
     cursor: pointer;
     font-family: var(--header-font) !important;
 }
@@ -191,7 +199,7 @@ p {
 }
 
 .hero_slider1_text1 {
-    font-size: 18px;
+    font-size: var(--lg-font);
     position: absolute;
     right: 10.5%;
     bottom: 71px;
@@ -215,14 +223,14 @@ p {
     border: 0;
     cursor: pointer;
     color: var(--white);
-    font-size: 14px;
+    font-size: var(--sm-font);
     display: flex;
     align-items: center;
 }
 
 #current_slide {
     display: inline-block;
-    font-size: 12px;
+    font-size: var(--s-font);
 }
 
 /* Hero Slider End */
@@ -305,7 +313,7 @@ p {
 }
 
 .testimonials_content_heading {
-    font-size: 18px;
+    font-size: var(--lg-font);
     color: var(--text-dark-light);
     flex: 1;
     margin: 15px 0 0 0;
@@ -313,7 +321,7 @@ p {
 }
 
 .testimonials_content_info1 {
-    font-size: 14px;
+    font-size: var(--sm-font);
     color: var(--text-light);
     line-height: 15px;
     font-family: var(--header-font);
@@ -321,7 +329,7 @@ p {
 
 .tsm_current {
     font-family: var(--header-font);
-    font-size: 16px;
+    font-size: var(--m-font);
     color: var(--text-light);
 }
 
@@ -371,14 +379,14 @@ p {
 .hero_slider2_indicator {
     position: absolute;
     left: 46%;
-    font-size: 12px;
+    font-size: var(--s-font);
     bottom: 4%;
     margin: 0;
 }
 
 /* Testimonials CSS End */
 
-
+/* About CSS Start */
 
 .about {
     position: relative;
@@ -387,7 +395,6 @@ p {
     width: 77%;
     margin: auto;
     height: auto;
-
 }
 
 .about .about_title {
@@ -396,13 +403,11 @@ p {
     text-align: center;
 }
 
-
 .about_img_container {
     height: 350px;
     display: flex;
     justify-content: center;
 }
-
 
 .about_img_container .about_img {
     width: 95%;
@@ -416,7 +421,6 @@ p {
     width: 100%;
 }
 
-
 .about_content_container {
     flex-direction: column;
 }
@@ -425,42 +429,36 @@ p {
     flex: 1;
 }
 
-
 .about_content p {
-    font-size: 16px;
+    font-size: var(--m-font);
     font-family: var(--header-font);
 }
 
 .about_content_container .about_btn {
     width: 110px;
-    font-size: 16px;
+    font-size: var(--m-font);
     font-family: var(--header-font);
     margin-top: 25px;
 }
 
+/* About CSS End */
+
+/* Image Slider CSS Start */
 
 .hero_slider3 {
     max-width: var(--max-width);
     width: 95%;
     top: 145px;
     height: 350px;
-    /* border: 1px solid; */
 }
-
-.swiper {
-    /* width: 100%; */
-    /* height: 100%; */
-}
-
 
 .hs3_slide_container {
     height: 80% !important;
 }
 
 .swiper-slide {
-
     text-align: center;
-    font-size: 18px;
+    font-size: var(--lg-font);
     background: #fff;
     display: flex;
     justify-content: center;
@@ -471,7 +469,6 @@ p {
     width: 80%;
 }
 
-
 .swiper-slide:nth-child(2n) {
     width: 60%;
 }
@@ -481,10 +478,8 @@ p {
 }
 
 .hs3_slide img {
-
     width: 100%;
     height: 100%;
-
 }
 
 .swiper-slide img {
@@ -504,16 +499,18 @@ p {
     position: absolute;
     width: 100%;
     bottom: 7%;
-    font-size: 18px;
+    font-size: var(--lg-font);
     text-align: center;
-
 }
+
+/* Image Slider CSS End */
+
+/* Behind The Camera CSS Start */
 
 .behind_camera {
     position: relative;
     max-width: var(--max-width);
     width: 77%;
-
     height: 450px;
     top: 200px;
     margin: auto;
@@ -523,7 +520,6 @@ p {
 .bc_left {
     width: 40%;
     height: 100%;
-
     position: relative;
 }
 
@@ -533,7 +529,6 @@ p {
     width: 85%;
     height: 90%;
     bottom: 0;
-
     left: 0;
     opacity: 0.5;
 }
@@ -543,7 +538,6 @@ p {
     width: 85%;
     height: 90%;
     right: 0;
-
     top: 0;
 }
 
@@ -552,7 +546,6 @@ p {
     height: 100%;
     object-fit: cover;
 }
-
 
 .bc_right {
     width: 60%;
@@ -563,47 +556,42 @@ p {
 
 .bc_right p {
     font-family: var(--header-font);
-
     color: var(--text-dark-light);
     margin-left: 55px;
 }
 
 .bc_right p:nth-child(1) {
-    font-size: 12px;
+    font-size: var(--s-font);
     font-weight: 700;
 }
 
-
 .bc_right p:nth-child(2) {
     margin-left: 0;
-
     font-size: 40px;
-
     line-height: 38px;
-
     width: 350px;
 }
 
 .bc_right p:nth-child(3) {
-
-    font-size: 14px;
+    font-size: var(--sm-font);
 }
 
 .bc_right button {
     width: fit-content;
-    font-size: 14px;
+    font-size: var(--sm-font);
     font-family: var(--header-font);
-
     margin-left: 55px;
 }
+
+/* Behind The Camera CSS End */
+
+/* Contact CSS Start */
 
 .contact {
     position: relative;
     max-width: var(--max-width);
     width: 77%;
-    /* border: 1px solid; */
     top: 280px;
-
     height: 450px;
     margin: auto;
     padding-bottom: 0;
@@ -613,8 +601,6 @@ p {
 }
 
 .c_left {
-
-    /* border: 1px solid blue; */
     width: 40%;
     height: 100%;
     position: relative;
@@ -623,7 +609,6 @@ p {
 .cl_content {
     position: absolute;
     width: 80%;
-
     background-color: var(--extra-light);
     height: 50%;
     top: 25%;
@@ -633,7 +618,6 @@ p {
 
 .clc_heading {
     color: var(--text-dark-light);
-
     position: absolute;
     font-weight: 600;
     left: -40px;
@@ -643,31 +627,24 @@ p {
     position: absolute;
     bottom: 0;
     width: 80%;
-
     height: 80%;
     object-fit: cover;
 }
 
 .c_right {
-    /* border: 1px solid black; */
     width: 60%;
     height: 100%;
     display: flex;
-
     flex-direction: column;
     gap: 20px;
-
 }
 
 .cr_form_box {
-    /* border: 1px solid blue; */
     height: 80%;
     width: 100%;
 }
 
 .cr_form {
-
-    /* border: 1px solid; */
     width: 100%;
     height: 100%;
     padding: 18px;
@@ -675,10 +652,8 @@ p {
     flex-direction: column;
     gap: 10px;
     font-family: var(--header-font);
-    font-size: 16px;
-
+    font-size: var(--m-font);
 }
-
 
 .crf_input {
     width: 100%;
@@ -688,13 +663,10 @@ p {
 
 .crf_textarea {
     width: 100%;
-
     height: 30%;
     padding: 5px 10px;
 }
 .cr_social_box {
-    /* border: 1px solid yellow; */
-
     height: 20%;
     width: 100%;
     display: flex;
@@ -704,7 +676,6 @@ p {
 }
 
 .crsb_link {
-
     width: 10%;
     height: 40%;
 }
@@ -713,6 +684,10 @@ p {
     width: 100%;
     height: 100%;
 }
+
+/* Contact CSS End */
+
+/* Footer CSS Start */
 
 .footer {
     max-width: var(--max-width);
@@ -723,7 +698,6 @@ p {
     height: 100px;
     display: flex;
     justify-content: center;
-
     align-items: center;
     font-family: var(--header-font);
     font-size: 20px;
@@ -734,8 +708,12 @@ p {
     margin: 0;
 }
 
+
+/* Media Queries Start For < 768px */
+
 @media only screen and (width < 768px) {
 
+    /* Navbar CSS Start */
     #nav1 {
         position: fixed;
         padding: unset;
@@ -745,7 +723,6 @@ p {
 
     .nav_header {
         padding: 1rem;
-
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -754,7 +731,7 @@ p {
     }
 
     .nav_logo p {
-        font-size: 12px;
+        font-size: var(--s-font);
         margin-top: 0;
         margin-bottom: 0;
         color: var(--white);
@@ -765,7 +742,6 @@ p {
         color: var(--white);
         cursor: pointer;
         display: flex;
-
     }
 
     .nav_menu_btn_bi-x {
@@ -775,7 +751,6 @@ p {
     .nav_links {
         position: absolute;
         padding: .5rem;
-
         flex-direction: column;
         justify-content: unset;
         gap: 4px;
@@ -785,7 +760,6 @@ p {
     }
 
     .nav_links.open {
-
         transform: translateY(0);
     }
 
@@ -795,7 +769,6 @@ p {
     }
 
     .nav_links a {
-
         padding-bottom: 5px;
         color: var(--white);
     }
@@ -805,23 +778,40 @@ p {
     }
 
     #nav2 {
-
         display: none;
     }
 
+    /* Hero Slider CSS Start */
+
     .hero_slider1 {
         top: 51px;
-
         height: 235px;
     }
 
     .hero_slider1_slide img {
-
         object-fit: cover;
     }
 
-    .photo_gall_1 {
+    
+    .hero_slider1_heading {
+        font-size: var(--m-font);
+        top: 25px;
+    }
+    
+    .hero_slider1_btn1 {
+        bottom: 47px;
+        font-size: var(--m-font) !important;
+        padding: 4px 8px !important;
+    }
+    
+    .hero_slider1_text1 {
+        font-size: var(--m-font);
+        bottom: 51px;
+    }
+    
+    /* Image Grid Gallery CSS Start */
 
+    .photo_gall_1 {
         top: 90px;
         grid-template-columns: auto auto auto;
     }
@@ -830,23 +820,8 @@ p {
         grid-row-start: span 2;
         grid-column-start: span 2;
     }
-
-    .hero_slider1_heading {
-        font-size: 16px;
-        top: 25px;
-    }
-
-    .hero_slider1_btn1 {
-        bottom: 47px;
-        font-size: 16px !important;
-        padding: 4px 8px !important;
-    }
-
-    .hero_slider1_text1 {
-
-        font-size: 16px;
-        bottom: 51px;
-    }
+    
+    /* Testimonial CSS Start */
 
     .testimonials {
         flex-direction: column;
@@ -854,30 +829,26 @@ p {
         height: auto;
     }
 
-
     .testimonials_content {
         width: 100%;
-        /* justify-content: center; */
         align-items: center;
         height: auto;
     }
 
     .testimonials_content_heading {
         margin: 0;
-
         flex: unset;
-        font-size: 16px;
+        font-size: var(--m-font);
     }
 
     .testimonials_content_info1 {
-        font-size: 12px;
+        font-size: var(--s-font);
         text-align: center;
         margin: 0 0 10px 0;
     }
 
     #testimonials_hero_slider2 {
         width: 100%;
-
         height: auto;
     }
 
@@ -886,6 +857,8 @@ p {
         top: 59%;
     }
 
+    /* About CSS Start */
+
     .about {
         top: 195px;
     }
@@ -893,7 +866,6 @@ p {
     .about_img_container {
         height: 200px;
     }
-
 
     .about_img_container .about_img {
         width: 80%;
@@ -908,27 +880,28 @@ p {
         margin-top: 15px !important;
     }
 
-
     .about_content p {
         text-align: center;
-        font-size: 14px;
+        font-size: var(--sm-font);
     }
-
 
     .about_content_container .about_btn {
         margin-top: 20px;
     }
 
+    /* Image Slider CSS Start */
+
     .hero_slider3 {
         top: 225px;
     }
+
+    /* Behind The Camera CSS Start */
 
     .behind_camera {
         top: 260px;
         height: auto;
         flex-direction: column;
     }
-
 
     .bc_right {
         width: 100%;
@@ -939,7 +912,6 @@ p {
         width: 50%;
         height: 270px;
         margin: auto;
-
     }
 
     .bc_right p:nth-child(1) {
@@ -949,42 +921,39 @@ p {
 
     .bc_right p:nth-child(2) {
         font-size: 22px;
-
         line-height: 26px;
         width: fit-content;
         text-align: center;
     }
 
     .bc_right p:nth-child(3) {
-
-        font-size: 12px;
-
+        font-size: var(--s-font);
         margin: 0 0 15px 0;
-
         text-align: center;
-
     }
 
     .bc_right button {
-        font-size: 12px;
+        font-size: var(--s-font);
         margin: 0 0 0 0;
     }
+
+    /* Contact CSS Start */
 
     .contact {
         flex-direction: column;
         gap: 10px;
         justify-content: center;
-
         align-items: center;
         height: 500px;
     }
-    .c_left {
 
+    .c_left {
         width: 40%;
         height: 30%;
-    }
-    .cl_content {
 
+    }
+
+    .cl_content {
         height: 100%;
         width: 100%;
         top: 0;
@@ -996,7 +965,6 @@ p {
 
     .c_right {
         width: 80%;
-
         height: 70%;
         gap: 5px;
     }
@@ -1014,76 +982,89 @@ p {
         height: 34%;
     }
 
-
     .crsb_link {
         height: 60%;
     }
 }
 
+/* Media Quries For < 520px */
+
 @media only screen and (width < 520px) {
+
+    /* Image Grid Gallery Start CSS */
     .photo_gall_1 {
         grid-template-columns: auto auto;
     }
 
-
+    /* Hero Slider CSS Start */
     .hero_slider1_text1 {
-        font-size: 14px;
+        font-size: var(--sm-font);
         width: 120px;
         line-height: 15px;
         bottom: 52px;
     }
 
+    /* About CSS Start */
     .about_content p {
-        font-size: 12px;
+        font-size: var(--s-font);
     }
+
+    /* Behind The Screen CSS Start */
 
     .bc_left {
         width: 80%;
     }
 
+    /* Footer CSS Start */
+
     .footer p {
         text-align: center;
-
-        font-size: 14px;
+        font-size: var(--sm-font);
     }
 }
 
+/* Media Queries For less < 425px */
+
 @media only screen and (width < 425px) {
+
+    /* Image Grid Gallery CSS Start */
+
     .photo_gall_1 {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: unset;
-
         row-gap: 10px;
     }
 
+    /* Hero Slider CSS Start */
+
     .hero_slider1_heading {
-        font-size: 12px;
+        font-size: var(--s-font);
         width: 140px;
     }
 
     .hero_slider1_btn1 {
-
-        font-size: 12px !important;
+        font-size: var(--s-font) !important;
         bottom: 46px;
         padding: 4px 8px !important;
     }
 
     .hero_slider1_text1 {
-        font-size: 12px;
+        font-size: var(--s-font);
         bottom: 47px;
         width: 100px;
-
         line-height: 12px;
     }
+
+    /* Testimonial CSS Start */
 
     #hero_slider2_prev svg,
     #hero_slider2_next svg {
         top: 45%;
     }
 
-    .bc_left {
+    /* Behind The Screen CSS Start */
 
+    .bc_left {
         width: 100%;
     }
-
 }
